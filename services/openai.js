@@ -26,9 +26,8 @@ const client = axios.create({
   },
 });
 
-const sk = "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";
 client.interceptors.request.use((c) => {
-  c.headers.Authorization = `Bearer ${sk}`;
+  c.headers.Authorization = `Bearer ${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}`;
   return handleRequest(c);
 });
 
