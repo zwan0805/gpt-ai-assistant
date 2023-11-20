@@ -27,7 +27,7 @@ const client = axios.create({
 });
 
 client.interceptors.request.use((c) => {
-  c.headers.Authorization = `Bearer ${config.OPENAI_API_KEY}`;
+  c.headers.Authorization = `Bearer ${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}`;
   return handleRequest(c);
 });
 
