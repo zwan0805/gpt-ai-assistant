@@ -27,7 +27,7 @@ const client = axios.create({
 });
 
 client.interceptors.request.use((c) => {
-  c.headers.Authorization = `Bearer ${process.env.CRON_SECRET}`;
+  c.headers.Authorization = `Bearer ${process.env."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"}`;
   return handleRequest(c);
 });
 
